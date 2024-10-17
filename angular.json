@@ -21,6 +21,9 @@
             ],
             "tsConfig": "tsconfig.app.json",
             "assets": [
+              "src/favicon.ico",
+              "src/assets",
+              "src/assets/img/logo-au-petit-village.jpg",
               {
                 "glob": "**/*",
                 "input": "public"
@@ -92,5 +95,8 @@
         }
       }
     }
+  },
+  "cli": {
+    "analytics": false
   }
 }

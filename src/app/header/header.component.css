@@ -1,0 +1,90 @@
+@font-face {
+  font-family: 'Bubbleboddy-neue';
+  src: url('/assets/fonts/bubbleboddy-neue/bubbleboddyneue-regular\ trial.ttf') format('ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Comformaa';
+  src: url('/assets/fonts/comfortaa/Comfortaa-VariableFont_wght.ttf') format('ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+h1 {
+  font-family: 'Bubbleboddy-neue', sans-serif;
+  color: #DA001E;
+}
+
+h2 {
+  font-family: 'Bubbleboddy-neue', sans-serif;
+  color: #DA001E;
+}
+
+p {
+  font-family: 'Comformaa', sans-serif;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #F9D0A3;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  flex-wrap: wrap; /* Permettre le wrap sur petits écrans */
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  width: 80px;
+  height: auto;
+  margin-right: 15px;
+}
+
+.site-title {
+  font-size: 24px;
+  font-family: 'Bubbleboddy neue', sans-serif;
+  color: #d63333;
+}
+
+.nav ul {
+  list-style-type: none;
+  display: flex;
+  gap: 15px;
+  padding: 0;
+}
+
+.nav ul li a {
+  cursor : pointer;
+  text-decoration: none;
+  font-size: 18px;
+  color: #333;
+}
+
+.nav ul li a:hover {
+  color: #d63333;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .site-title {
+    font-size: 20px;
+  }
+
+  .nav ul {
+    flex-direction: column;
+    gap: 10px;
+    align-items: flex-start;
+  }
+}

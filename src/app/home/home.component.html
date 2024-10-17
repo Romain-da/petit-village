@@ -1,0 +1,34 @@
+<div class="home">
+  <!-- Présentation de l'entreprise -->
+  <section class="about">
+    <h1>Bienvenue "Au Petit Village"</h1>
+    <p>
+      Nous sommes spécialisés dans la création de figurines inspirées des célèbres aventures
+      d'Astérix et Obélix. Chaque figurine est faite à la main avec soin et souci du détail.
+    </p>
+  </section>
+
+  <!-- Recherche par nom de produit -->
+  <section class="search">
+    <input type="text" [(ngModel)]="searchTerm" (input)="filterProducts()" placeholder="Rechercher un produit..." />
+  </section>
+
+  <!-- Tri des produits -->
+  <section class="sort">
+    <label for="sort">Trier par prix :</label>
+    <select id="sort" (change)="sortProducts($event)">
+      <option value="ascending">Prix croissant</option>
+      <option value="descending">Prix décroissant</option>
+    </select>
+  </section>
+
+  <!-- Catalogue des produits -->
+  <section class="products">
+    <div class="product-card" *ngFor="let product of filteredProducts">
+      <img [src]="product.image" alt="{{ product.name }}" class="product-image" />
+      <h3>{{ product.name }}</h3>
+      <p>{{ product.description }}</p>
+      <p>Prix : {{ product.price }}€</p>
+    </div>
+  </section>
+</div>

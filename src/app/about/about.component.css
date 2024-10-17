@@ -1,0 +1,137 @@
+@font-face {
+  font-family: 'Bubbleboddy-neue';
+  src: url('/assets/fonts/bubbleboddy-neue/bubbleboddyneue-regular\ trial.ttf') format('ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Comformaa';
+  src: url('/assets/fonts/comfortaa/Comfortaa-VariableFont_wght.ttf') format('ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+h1 {
+  font-family: 'Bubbleboddy-neue', sans-serif;
+  color: #DA001E;
+}
+
+h2 {
+  font-family: 'Bubbleboddy-neue', sans-serif;
+  color: #DA001E;
+}
+
+p {
+  font-family: 'Comformaa', sans-serif;
+}
+
+.about {
+  text-align: center;
+}
+
+form {
+    /* On centre le formulaire */
+    margin: 0 auto;
+    width: 400px;
+    /* Le contour du formulaire */
+    padding: 1em;
+    border: 1px solid #ccc;
+    border-radius: 1em;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  label {
+    /* Taille et alignement uniformes */
+    display: inline-block;
+    width: 90px;
+    text-align: right;
+  }
+  
+  input,
+  textarea {
+    /* On s'assure que les champs texte ont la même police
+       Par défaut, les zones de texte ont une police à chasse
+       fixe. */
+    font: 1em sans-serif;
+  
+    /* Taille uniforme pour des champs */
+    width: 300px;
+    box-sizing: border-box;
+  
+    /* On utilise la même bordure que pour le formulaire */
+    border: 1px solid #999;
+  }
+  
+  input:focus,
+  textarea:focus {
+    /* On rajoute une mise en avant pour les éléments avec
+       le focus. */
+    border-color: #000;
+  }
+  
+  textarea {
+    /* On aligne les textes sur plusieurs lignes avec leur
+       libellé. */
+    vertical-align: top;
+  
+    /* On fournit un peut d'espace pour saisir du texte. */
+    height: 5em;
+  
+    /* On permet de redimensionner verticalement. */
+    resize: vertical;
+  }
+  
+  .button {
+    /* On aligne les boutons avec les champs texte. */
+    padding-left: 90px; /* La même taille que les libellés */
+  }
+  
+  button {
+    /* Une marge supplémentaire représentant approximativement
+       le même espace qu'entre les libellés et les champs. */
+    margin-left: 0.5em;
+  }
+  /* Responsive Styles */
+
+/* Small devices (smartphones, less than 600px) */
+@media (max-width: 600px) {
+  form {
+    padding: 0.8em;
+    width: 100%; 
+    max-width: 100%; 
+  }
+
+  label {
+    width: 100%; 
+    text-align: left; 
+    margin-bottom: 0.5em; 
+  }
+
+  .button {
+    padding-left: 0; 
+    text-align: center; 
+  }
+
+  button {
+    margin: 0.5em 0; 
+    width: 100%; 
+  }
+}
+
+/* Medium devices (tablets, 600px to 900px) */
+@media (min-width: 600px) and (max-width: 900px) {
+  form {
+    width: 100%;
+    max-width: 450px; 
+  }
+
+  label {
+    width: 120px; 
+  }
+}

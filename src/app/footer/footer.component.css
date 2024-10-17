@@ -1,0 +1,64 @@
+@font-face {
+  font-family: 'Bubbleboddy-neue';
+  src: url('/assets/fonts/bubbleboddy-neue/bubbleboddyneue-regular\ trial.ttf') format('ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Comformaa';
+  src: url('/assets/fonts/comfortaa/Comfortaa-VariableFont_wght.ttf') format('ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+h1 {
+  font-family: 'Bubbleboddy-neue', sans-serif;
+  color: #DA001E;
+}
+
+h2 {
+  font-family: 'Bubbleboddy-neue', sans-serif;
+  color: #DA001E;
+}
+
+p {
+  font-family: 'Comformaa', sans-serif;
+}
+
+.footer {
+  background-color: #333;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+.footer-links {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.footer-links li a {
+  color: white;
+  text-decoration: none;
+}
+
+.footer-links li a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+  .footer {
+    padding: 15px;
+  }
+
+  .footer-links {
+    flex-direction: column; /* Passe les liens en colonne sur petit écran */
+    gap: 10px;
+  }
+}

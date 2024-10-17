@@ -1,0 +1,109 @@
+@font-face {
+  font-family: 'Bubbleboddy-neue';
+  src: url('/assets/fonts/bubbleboddy-neue/bubbleboddyneue-regular\ trial.ttf') format('ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Comformaa';
+  src: url('/assets/fonts/comfortaa/Comfortaa-VariableFont_wght.ttf') format('ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+h1 {
+  font-family: 'Bubbleboddy-neue', sans-serif;
+  color: #DA001E;
+}
+
+h2 {
+  font-family: 'Bubbleboddy-neue', sans-serif;
+  color: #DA001E;
+}
+
+p {
+  font-family: 'Comformaa', sans-serif;
+}
+
+.product-details {
+    text-align: center;
+    margin: 20px;
+  }
+  
+  .product-image {
+    width: 300px;
+    height: auto;
+    margin-bottom: 20px;
+  }
+  
+  .product-description {
+    font-size: 16px;
+    color: #555;
+  }
+  
+  .product-price {
+    font-size: 18px;
+    font-weight: bold;
+    color: #d63333;
+  }
+ /* Responsive Styles */
+
+/* Small devices (smartphones, less than 600px) */
+@media (max-width: 600px) {
+  .product-details {
+    margin: 10px; 
+  }
+
+  .product-image {
+    width: 100%; 
+    max-width: 100%; 
+  }
+
+  .product-description {
+    font-size: 14px; 
+  }
+
+  .product-price {
+    font-size: 16px; 
+  }
+}
+
+/* Medium devices (tablets, 600px to 900px) */
+@media (min-width: 600px) and (max-width: 900px) {
+  .product-details {
+    margin: 15px;
+  }
+
+  .product-image {
+    max-width: 250px; 
+  }
+
+  .product-description {
+    font-size: 15px; 
+  }
+
+  .product-price {
+    font-size: 17px;
+  }
+}
+
+/* Large devices (desktops, more than 900px) */
+@media (min-width: 900px) {
+  .product-details {
+    margin: 20px;
+  }
+
+  .product-image {
+    max-width: 300px; 
+  }
+
+  .product-description {
+    font-size: 16px;
+  }
+
+  .product-price {
+    font-size: 18px;
+  }
+} 

@@ -1,0 +1,20 @@
+
+<section class="main">
+
+<h1>Bienvenue sur la page produits</h1>
+
+
+<div *ngIf="products.length > 0" class="products-list">
+  <div *ngFor="let product of products" class="product-details">
+    <h1>{{ product.name }}</h1>
+    <img [src]="product.image" alt="{{ product.name }}" class="product-image" />
+    <p class="product-description">{{ product.description }}</p>
+    <p class="product-price">Prix : {{ product.price }}€</p>
+  </div>
+</div>
+
+<div *ngIf="products.length === 0">
+  <p>Aucun produit disponible.</p>
+</div>
+
+</section>
